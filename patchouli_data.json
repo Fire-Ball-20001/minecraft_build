@@ -1,0 +1,22 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "pneumaticcraft:book": {
+      "viewedEntries": [
+        "pneumaticcraft:base_concepts/pressure",
+        "pneumaticcraft:manufacturing/pressure_chamber",
+        "pneumaticcraft:spawning/spawner_core",
+        "pneumaticcraft:programming/start"
+      ],
+      "bookmarks": [],
+      "history": [
+        "pneumaticcraft:programming/start",
+        "pneumaticcraft:spawning/spawner_core",
+        "pneumaticcraft:manufacturing/pressure_chamber",
+        "pneumaticcraft:base_concepts/pressure"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

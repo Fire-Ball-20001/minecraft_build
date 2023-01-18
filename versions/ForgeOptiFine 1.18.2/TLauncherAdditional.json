@@ -1,0 +1,76 @@
+{
+  "activateSkinCapeForUserVersion": false,
+  "skipHashsumValidation": false,
+  "modsLibraries": [
+    {
+      "name": "optifine:OptiFine:1.18.2_HD_U_H7",
+      "artifact": {
+        "sha1": "70b3d94e29ca4270881eb8dadba87c0c0ba48d93",
+        "size": 6115048,
+        "path": "optifine/OptiFine/1.18.2_HD_U_H7/OptiFine-1.18.2_HD_U_H7.jar",
+        "url": "http://res.tlauncher.org/unb/mods/9999999/11001989/OptiFine-1.18.2_HD_U_H7.jar"
+      }
+    }
+  ],
+  "additionalFiles": [
+    {
+      "sha1": "52e1b15676c03b5e1b769f5bd7d89426e9807c89",
+      "size": 9349972,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-extra.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-extra.jar"
+    },
+    {
+      "sha1": "a661c6a55a0600bd391bdbbd6827654c05b2109c",
+      "size": 6716693,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-mappings.txt",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-mappings.txt"
+    },
+    {
+      "sha1": "2b8907919c1d51fda0b2ace0eba8a8b73855198f",
+      "size": 10909711,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-slim.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-slim.jar"
+    },
+    {
+      "sha1": "c649df7e8dfbff5b8e571f5a37a0cb755119eb77",
+      "size": 16166247,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-srg.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-srg.jar"
+    },
+    {
+      "sha1": "850d23c4c82f7d414b63a49be8e397fb1d80889f",
+      "size": 5162005,
+      "path": "libraries/net/minecraftforge/forge/1.18.2-40.1.19/forge-1.18.2-40.1.19-client.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/forge/1.18.2-40.1.19/forge-1.18.2-40.1.19-client.jar"
+    },
+    {
+      "sha1": "4cc34c6ff5a02e1356bd2d882e013debae7286bd",
+      "size": 2421468,
+      "path": "libraries/net/minecraftforge/forge/1.18.2-40.1.19/forge-1.18.2-40.1.19-universal.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/forge/1.18.2-40.1.19/forge-1.18.2-40.1.19-universal.jar"
+    },
+    {
+      "sha1": "f67826b1f7fb61e058439ef19066ff4b09533daf",
+      "size": 109651,
+      "path": "libraries/net/minecraftforge/fmlcore/1.18.2-40.1.19/fmlcore-1.18.2-40.1.19.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/fmlcore/1.18.2-40.1.19/fmlcore-1.18.2-40.1.19.jar"
+    },
+    {
+      "sha1": "317cc11a893e2beb814561bffe3139e92d30c1c3",
+      "size": 16292,
+      "path": "libraries/net/minecraftforge/javafmllanguage/1.18.2-40.1.19/javafmllanguage-1.18.2-40.1.19.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/javafmllanguage/1.18.2-40.1.19/javafmllanguage-1.18.2-40.1.19.jar"
+    },
+    {
+      "sha1": "bb37b97728b72952ffcbeae0f0b351bff3cf80d3",
+      "size": 4987,
+      "path": "libraries/net/minecraftforge/mclanguage/1.18.2-40.1.19/mclanguage-1.18.2-40.1.19.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/mclanguage/1.18.2-40.1.19/mclanguage-1.18.2-40.1.19.jar"
+    }
+  ],
+  "tlauncherVersion": 0,
+  "source": "local_version_repo",
+  "jar": "1.18.2",
+  "skinVersion": true,
+  "updatedTime": "2022-02-28T10:42:47+10:00"
+}
