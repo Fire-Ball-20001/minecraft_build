@@ -2,6 +2,16 @@
   "bookGuiScale": 0,
   "clickedVisualize": false,
   "bookData": {
+    "apotheosis:apoth_chronicle": {
+      "viewedEntries": [
+        "apotheosis:adventure/affix_loot/affixes",
+        "apotheosis:adventure/rogue_spawners/swarm_spawners",
+        "apotheosis:adventure/rogue_spawners/brutal_spawners",
+        "apotheosis:adventure/affix_loot/gem_dust"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "pneumaticcraft:book": {
       "viewedEntries": [
         "pneumaticcraft:base_concepts/pressure",
@@ -10,12 +20,6 @@
         "pneumaticcraft:programming/start"
       ],
       "bookmarks": [],
-      "history": [
-        "pneumaticcraft:programming/start",
-        "pneumaticcraft:spawning/spawner_core",
-        "pneumaticcraft:manufacturing/pressure_chamber",
-        "pneumaticcraft:base_concepts/pressure"
-      ],
       "completedManualQuests": []
     }
   }
