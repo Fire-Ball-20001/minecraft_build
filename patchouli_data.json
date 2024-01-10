@@ -1,13 +1,15 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
+  "clickedVisualize": true,
   "bookData": {
     "apotheosis:apoth_chronicle": {
       "viewedEntries": [
         "apotheosis:adventure/affix_loot/affixes",
         "apotheosis:adventure/rogue_spawners/swarm_spawners",
         "apotheosis:adventure/rogue_spawners/brutal_spawners",
-        "apotheosis:adventure/affix_loot/gem_dust"
+        "apotheosis:adventure/affix_loot/gem_dust",
+        "apotheosis:enchanting/anvil/splitting",
+        "apotheosis:adventure/affix_loot/gems"
       ],
       "bookmarks": [],
       "completedManualQuests": []
@@ -17,7 +19,12 @@
         "pneumaticcraft:base_concepts/pressure",
         "pneumaticcraft:manufacturing/pressure_chamber",
         "pneumaticcraft:spawning/spawner_core",
-        "pneumaticcraft:programming/start"
+        "pneumaticcraft:programming/start",
+        "pneumaticcraft:base_concepts/getting_started",
+        "pneumaticcraft:base_concepts/basic_materials",
+        "pneumaticcraft:tubes/pressure_tubes",
+        "pneumaticcraft:tubes/tube_modules",
+        "pneumaticcraft:base_concepts/heat"
       ],
       "bookmarks": [],
       "completedManualQuests": []

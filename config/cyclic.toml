@@ -258,7 +258,7 @@
 		[cyclic.blocks.eye_redstone]
 			#Maximum distance to activate
 			#Range: 2 ~ 256
-			range = 32
+			range = 128
 			#Tick delay between checks, faster checks can consume server resources (1 means check every tick; 20 means only check once per second)
 			#Range: 1 ~ 20
 			frequency = 5
