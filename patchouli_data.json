@@ -28,6 +28,26 @@
       ],
       "bookmarks": [],
       "completedManualQuests": []
+    },
+    "ars_nouveau:worn_notebook": {
+      "viewedEntries": [
+        "ars_nouveau:getting_started/spell_casting"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "psi:encyclopaedia_psionica": {
+      "viewedEntries": [
+        "psi:basics/tutorial_1",
+        "psi:basics/introduction",
+        "psi:components/psidust",
+        "psi:components/psimetal",
+        "psi:components/ebony_ivory",
+        "psi:items/exosuit",
+        "psi:items/exosuit_sensor"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
     }
   }
 }
