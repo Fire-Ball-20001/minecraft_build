@@ -31,7 +31,13 @@
     },
     "ars_nouveau:worn_notebook": {
       "viewedEntries": [
-        "ars_nouveau:getting_started/spell_casting"
+        "ars_nouveau:getting_started/spell_casting",
+        "ars_nouveau:getting_started/spell_mana",
+        "ars_nouveau:getting_started/obtaining_gems",
+        "ars_nouveau:equipment/dowsing_rod",
+        "ars_nouveau:getting_started/source",
+        "ars_nouveau:source/agronomic_sourcelink",
+        "ars_nouveau:getting_started/new_glyphs"
       ],
       "bookmarks": [],
       "completedManualQuests": []
