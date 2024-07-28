@@ -12,6 +12,9 @@
 		#Cost in minutes of using the solar beam ability.
 		#Range: > 0
 		solar_beam_cost = 5
+		#Cost in minutes of using the supernova ability.
+		#Range: > 0
+		supernova_cost = 60
 
 	[tools_and_abilities.wrought_helm]
 		#Set to true for the Wrought Helm to have limited durability.
@@ -132,6 +135,8 @@
 		heals_out_of_battle = true
 		#Allow players to steal frostmaws' ice crystals (only using specific means!)
 		stealable_ice_crystal = true
+		#Disable/enable frostmaws resetting health when a player respawns nearby. (Prevents respawn cheese!)
+		reset_health_when_respawn = true
 
 		[mobs.frostmaw.biome_config]
 			#Each entry is a combination of allowed biome types.
@@ -173,63 +178,13 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			attack_multiplier = 1.0
 
-	[mobs.barako]
-		#Disable/enable Barako's boss health bar
-		has_boss_bar = true
-		#Disable/enable Barako healing while not in combat
-		heals_out_of_battle = true
-		#Which item Barako desires in exchange for the Sun's Blessing
-		trade_which_item = "minecraft:gold_block"
-		#How many of the item Barako desires in exchange for the Sun's Blessing
-		#Range: 0 ~ 64
-		trade_how_many = 7
-
-		#Generation controls for Barakoa villages
-		[mobs.barako.biome_config]
-			#Each entry is a combination of allowed biome types.
-			#Separate types with commas to require biomes to have all types in an entry
-			#Put a '!' before a biome type to mean NOT that type
-			#A blank entry means all biomes. No entries means no biomes.
-			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
-			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["SAVANNA"]
-			#Allow spawns in these biomes regardless of the biome type settings
-			biome_whitelist = []
-			#Prevent spawns in these biomes regardless of the biome type settings
-			biome_blacklist = []
-
-		#Controls for spawning structure/mob with world generation
-		[mobs.barako.generation_config]
-			#Smaller number causes more generation, -1 to disable generation
-			#Maximum number of chunks between placements of this mob/structure
-			#Range: > -1
-			generation_distance = 25
-			#Smaller number causes more generation, -1 to disable generation
-			#Minimum number of chunks between placements of this mob/structure
-			#Range: > -1
-			generation_separation = 8
-			#Maximum height for generation placement. -65 to ignore
-			#Range: -65.0 ~ 256.0
-			height_max = 100.0
-			#Minimum height for generation placement. -65 to ignore
-			#Range: -65.0 ~ 256.0
-			height_min = 50.0
-			#Names of structures this mob/structure will avoid when generating
-			avoid_structures = ["minecraft:villages", "minecraft:pillager_outposts"]
-
-		[mobs.barako.combat_config]
-			#Scale mob health by this value
-			#Range: 0.0 ~ 1.7976931348623157E308
-			health_multiplier = 1.0
-			#Scale mob attack damage by this value
-			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_multiplier = 1.0
-
 	[mobs.ferrous_wroughtnaut]
 		#Disable/enable Ferrous Wroughtnaut's boss health bar
 		has_boss_bar = true
 		#Disable/enable Ferrous Wroughtnaut healing while not active
 		heals_out_of_battle = true
+		#Disable/enable Ferrous Wroughtnaut resetting health when a player respawns nearby. (Prevents respawn cheese!)
+		reset_health_when_respawn = true
 
 		[mobs.ferrous_wroughtnaut.biome_config]
 			#Each entry is a combination of allowed biome types.
@@ -387,67 +342,6 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			attack_multiplier = 1.0
 
-	[mobs.barakoa]
-
-		#Controls spawning for Barakoana hunting groups
-		#Group size controls how many elites spawn, not followers
-		#See Barako config for village controls
-		[mobs.barakoa.biome_config]
-			#Each entry is a combination of allowed biome types.
-			#Separate types with commas to require biomes to have all types in an entry
-			#Put a '!' before a biome type to mean NOT that type
-			#A blank entry means all biomes. No entries means no biomes.
-			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
-			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["SAVANNA"]
-			#Allow spawns in these biomes regardless of the biome type settings
-			biome_whitelist = []
-			#Prevent spawns in these biomes regardless of the biome type settings
-			biome_blacklist = []
-
-		#Controls for vanilla-style mob spawning
-		[mobs.barakoa.spawn_config]
-			#Smaller number causes less spawning, 0 to disable spawning
-			#Range: > 0
-			spawn_rate = 5
-			#Minimum number of mobs that appear in a spawn group
-			#Range: > 1
-			min_group_size = 1
-			#Maximum number of mobs that appear in a spawn group
-			#Range: > 1
-			max_group_size = 1
-			#Probability of a spawn attempt succeeding. 1 for normal spawning, 0 will prevent spawning. Used to make mobs extra rare.
-			#Range: 0.0 ~ 1.0
-			extra_rarity = 1.0
-			#Names of dimensions this mob can spawn in
-			dimensions = ["minecraft:overworld"]
-			#Names of blocks this mob is allowed to spawn on. Leave blank to ignore block names.
-			allowed_blocks = []
-			#Tags of blocks this mob is allowed to spawn on. Leave blank to ignore block tags.
-			allowed_block_tags = ["minecraft:valid_spawn", "minecraft:sand"]
-			#Maximum height for this spawn. -65 to ignore.
-			#Range: -65 ~ 256
-			height_max = -65
-			#Minimum height for this spawn. -65 to ignore.
-			#Range: -65 ~ 256
-			height_min = 60
-			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
-			needs_darkness = false
-			#Set to true to only spawn mob if it can see the sky.
-			needs_see_sky = false
-			#Set to true to only spawn mob if it can't see the sky.
-			needs_cant_see_sky = false
-			#Names of structures this mob will avoid spawning near.
-			avoid_structures = ["minecraft:villages", "minecraft:pillager_outposts", "mowziesmobs:barakoa_villages"]
-
-		[mobs.barakoa.combat_config]
-			#Scale mob health by this value
-			#Range: 0.0 ~ 1.7976931348623157E308
-			health_multiplier = 1.0
-			#Scale mob attack damage by this value
-			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_multiplier = 1.0
-
 	[mobs.naga]
 
 		[mobs.naga.biome_config]
@@ -557,6 +451,165 @@
 			avoid_structures = ["minecraft:villages", "minecraft:pillager_outposts"]
 
 		[mobs.foliaath.combat_config]
+			#Scale mob health by this value
+			#Range: 0.0 ~ 1.7976931348623157E308
+			health_multiplier = 1.0
+			#Scale mob attack damage by this value
+			#Range: 0.0 ~ 1.7976931348623157E308
+			attack_multiplier = 1.0
+
+	[mobs.umvuthi]
+		#Disable/enable Umvuthi's boss health bar
+		has_boss_bar = true
+		#Disable/enable Umvuthi healing while not in combat
+		heals_out_of_battle = true
+		#Which item Umvuthi desires in exchange for the Sun's Blessing
+		trade_which_item = "minecraft:gold_block"
+		#How many of the item Umvuthi desires in exchange for the Sun's Blessing
+		#Range: 0 ~ 64
+		trade_how_many = 7
+		#Disable/enable Umvuthi resetting health when a player respawns nearby. (Prevents respawn cheese!)
+		reset_health_when_respawn = true
+
+		#Generation controls for Umvuthana Groves
+		[mobs.umvuthi.biome_config]
+			#Each entry is a combination of allowed biome types.
+			#Separate types with commas to require biomes to have all types in an entry
+			#Put a '!' before a biome type to mean NOT that type
+			#A blank entry means all biomes. No entries means no biomes.
+			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
+			#'!MOUNTAIN' would mean all non-mountain biomes
+			biome_type = ["SAVANNA"]
+			#Allow spawns in these biomes regardless of the biome type settings
+			biome_whitelist = []
+			#Prevent spawns in these biomes regardless of the biome type settings
+			biome_blacklist = []
+
+		#Controls for spawning structure/mob with world generation
+		[mobs.umvuthi.generation_config]
+			#Smaller number causes more generation, -1 to disable generation
+			#Maximum number of chunks between placements of this mob/structure
+			#Range: > -1
+			generation_distance = 25
+			#Smaller number causes more generation, -1 to disable generation
+			#Minimum number of chunks between placements of this mob/structure
+			#Range: > -1
+			generation_separation = 8
+			#Maximum height for generation placement. -65 to ignore
+			#Range: -65.0 ~ 256.0
+			height_max = 100.0
+			#Minimum height for generation placement. -65 to ignore
+			#Range: -65.0 ~ 256.0
+			height_min = 50.0
+			#Names of structures this mob/structure will avoid when generating
+			avoid_structures = ["minecraft:villages", "minecraft:pillager_outposts"]
+
+		[mobs.umvuthi.combat_config]
+			#Scale mob health by this value
+			#Range: 0.0 ~ 1.7976931348623157E308
+			health_multiplier = 1.0
+			#Scale mob attack damage by this value
+			#Range: 0.0 ~ 1.7976931348623157E308
+			attack_multiplier = 1.0
+
+	[mobs.sculptor]
+		#Disable/enable the Sculptor healing while not in combat
+		heals_out_of_battle = true
+
+		[mobs.sculptor.biome_config]
+			#Each entry is a combination of allowed biome types.
+			#Separate types with commas to require biomes to have all types in an entry
+			#Put a '!' before a biome type to mean NOT that type
+			#A blank entry means all biomes. No entries means no biomes.
+			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
+			#'!MOUNTAIN' would mean all non-mountain biomes
+			biome_type = ["MOUNTAIN"]
+			#Allow spawns in these biomes regardless of the biome type settings
+			biome_whitelist = []
+			#Prevent spawns in these biomes regardless of the biome type settings
+			biome_blacklist = []
+
+		#Controls for spawning structure/mob with world generation
+		[mobs.sculptor.generation_config]
+			#Smaller number causes more generation, -1 to disable generation
+			#Maximum number of chunks between placements of this mob/structure
+			#Range: > -1
+			generation_distance = 25
+			#Smaller number causes more generation, -1 to disable generation
+			#Minimum number of chunks between placements of this mob/structure
+			#Range: > -1
+			generation_separation = 8
+			#Maximum height for generation placement. -65 to ignore
+			#Range: -65.0 ~ 256.0
+			height_max = 200.0
+			#Minimum height for generation placement. -65 to ignore
+			#Range: -65.0 ~ 256.0
+			height_min = 120.0
+			#Names of structures this mob/structure will avoid when generating
+			avoid_structures = []
+
+		[mobs.sculptor.combat_config]
+			#Scale mob health by this value
+			#Range: 0.0 ~ 1.7976931348623157E308
+			health_multiplier = 1.0
+			#Scale mob attack damage by this value
+			#Range: 0.0 ~ 1.7976931348623157E308
+			attack_multiplier = 1.0
+
+	[mobs.umvuthana]
+
+		#Controls spawning for Umvuthana hunting groups
+		#Group size controls how many raptors spawn, not followers
+		#See Umvuthi config for grove structure controls
+		[mobs.umvuthana.biome_config]
+			#Each entry is a combination of allowed biome types.
+			#Separate types with commas to require biomes to have all types in an entry
+			#Put a '!' before a biome type to mean NOT that type
+			#A blank entry means all biomes. No entries means no biomes.
+			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
+			#'!MOUNTAIN' would mean all non-mountain biomes
+			biome_type = ["SAVANNA"]
+			#Allow spawns in these biomes regardless of the biome type settings
+			biome_whitelist = []
+			#Prevent spawns in these biomes regardless of the biome type settings
+			biome_blacklist = []
+
+		#Controls for vanilla-style mob spawning
+		[mobs.umvuthana.spawn_config]
+			#Smaller number causes less spawning, 0 to disable spawning
+			#Range: > 0
+			spawn_rate = 5
+			#Minimum number of mobs that appear in a spawn group
+			#Range: > 1
+			min_group_size = 1
+			#Maximum number of mobs that appear in a spawn group
+			#Range: > 1
+			max_group_size = 1
+			#Probability of a spawn attempt succeeding. 1 for normal spawning, 0 will prevent spawning. Used to make mobs extra rare.
+			#Range: 0.0 ~ 1.0
+			extra_rarity = 1.0
+			#Names of dimensions this mob can spawn in
+			dimensions = ["minecraft:overworld"]
+			#Names of blocks this mob is allowed to spawn on. Leave blank to ignore block names.
+			allowed_blocks = []
+			#Tags of blocks this mob is allowed to spawn on. Leave blank to ignore block tags.
+			allowed_block_tags = ["minecraft:valid_spawn", "minecraft:sand"]
+			#Maximum height for this spawn. -65 to ignore.
+			#Range: -65 ~ 256
+			height_max = -65
+			#Minimum height for this spawn. -65 to ignore.
+			#Range: -65 ~ 256
+			height_min = 60
+			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
+			needs_darkness = false
+			#Set to true to only spawn mob if it can see the sky.
+			needs_see_sky = false
+			#Set to true to only spawn mob if it can't see the sky.
+			needs_cant_see_sky = false
+			#Names of structures this mob will avoid spawning near.
+			avoid_structures = ["minecraft:villages", "minecraft:pillager_outposts", "mowziesmobs:umvuthana_groves"]
+
+		[mobs.umvuthana.combat_config]
 			#Scale mob health by this value
 			#Range: 0.0 ~ 1.7976931348623157E308
 			health_multiplier = 1.0

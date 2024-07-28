@@ -26,5 +26,5 @@
 	#Range: 1 ~ 1000
 	maxSpawnWeight = 80
 	#list of Mod:MobName,DefaultSpawnweight;
-	defaultSpawnWeightList = "minecraft:enderman,5;minecraft:witch,5;minecraft:endermite,0;"
+	defaultSpawnWeightList = "minecraft:enderman,5;minecraft:witch,5;minecraft:endermite,0;midnight_madness:necromancer,0;"
 
